@@ -28,17 +28,30 @@ public class Investment
 					Contribution nextCont = this.theContributions.get(i + 1);
 					for(int j = currCont.monthNumber; j < nextCont.monthNumber; ++j)
 					{
-						value = value * 1.067;
+						System.out.println("Start of month " + j);
+						System.out.println(value);
+						System.out.println("End of month " + j);
+						value = value * 1.0067;
+						System.out.println(value);
+						System.out.println(" ");
+
+
 					}
 				}
 				else
 				{
 					for(int j = currCont.monthNumber; j <= afterHowManyMonths; ++j)
 					{
-						value = value * 1.067;
+						System.out.println("Start of month " + j);
+						System.out.println(value);
+						System.out.println("End of month " + j);
+						value = value * 1.0067;
+						System.out.println(value);
+						System.out.println(" ");
+
+
 					}
 				}
-				
 				
 			}
 		
